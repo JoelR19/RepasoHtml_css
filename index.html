@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación de HTML y CSS</title>
+  <style>
+    /* Estilos para la documentación */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Introducción a HTML y CSS</h1>
+  <p>HTML (HyperText Markup Language) es el estándar para crear y diseñar páginas web. CSS (Cascading Style Sheets) se utiliza para estilizar y diseñar visualmente los documentos HTML.</p>
+
+  <div class="section">
+    <h2>HTML: Estructura Básica</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo.&lt;/p&gt;
+    &lt;a href="https://www.ejemplo.com"&gt;Enlace&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>HTML: Elementos Comunes</h2>
+    <h3>Encabezados</h3>
+    <pre><code>&lt;h1&gt;Encabezado Nivel 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado Nivel 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado Nivel 3&lt;/h3&gt;</code></pre>
+
+    <h3>Listas</h3>
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Elemento de lista&lt;/li&gt;
+  &lt;li&gt;Otro elemento&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elemento numerado&lt;/li&gt;
+  &lt;li&gt;Otro elemento&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+    <h3>Tablas</h3>
+    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Encabezado 1&lt;/th&gt;
+    &lt;th&gt;Encabezado 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Celda 1&lt;/td&gt;
+    &lt;td&gt;Celda 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>CSS: Selección de Elementos</h2>
+    <h3>Selección por Etiqueta</h3>
+    <pre><code>p {
+  color: blue;
+}</code></pre>
+
+    <h3>Selección por Clase</h3>
+    <pre><code>.mi-clase {
+  font-size: 20px;
+}</code></pre>
+
+    <h3>Selección por ID</h3>
+    <pre><code>#mi-id {
+  background-color: yellow;
+}</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>CSS: Propiedades Comunes</h2>
+    <h3>Colores y Fuentes</h3>
+    <pre><code>body {
+  color: #333;
+  font-family: Arial, sans-serif;
+}</code></pre>
+
+    <h3>Margenes y Rellenos</h3>
+    <pre><code>.box {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}</code></pre>
+
+    <h3>Estilización de Enlaces</h3>
+    <pre><code>a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>CSS: Layout y Diseño</h2>
+    <h3>Box Model</h3>
+    <pre><code>.box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 15px;
+}</code></pre>
+
+    <h3>Flexbox</h3>
+    <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}</code></pre>
+
+    <h3>Grid</h3>
+    <pre><code>.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+}</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>HTML y CSS Avanzado</h2>
+    <h3>Transiciones y Animaciones</h3>
+    <pre><code>.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+  background-color: blue;
+}</code></pre>
+
+    <h3>Estilos Responsivos</h3>
+    <pre><code>@media (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+}</code></pre>
+
+    <h3>Variables CSS</h3>
+    <pre><code>:root {
+  --main-color: #3498db;
+}
+
+.box {
+  background-color: var(--main-color);
+}</code></pre>
+  </div>
+
+</body>
+</html>
